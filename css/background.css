@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#a2000a, #cf0000);
+}
+
+/* background.css */
+.container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+.container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: url('/assets/trees.png');
+    background-size: cover;
+    z-index: 1;
+}
+
+.container .circle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.container .circle::before {
+    content: '';
+    position: absolute;
+    inset: -200px -300px;
+    background: url('/assets/santa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+}
+
+.container .circle::after {
+    position: absolute;
+    inset: -125px -200px;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #626262;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container .snow {
+    position: relative;
+    display: flex;
+}
+
+.container .snow span {
+    position: relative;
+    min-width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 1vw;
+    box-shadow: -100px 20px 5px #fff, 100px 20px 10px #fff;
+    animation: animateSnow 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.container .snow span:nth-child(even) {
+    min-width: 7px;
+    height: 7px;
+}
+
+@keyframes animateSnow {
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .container .circle::after {
+        font-size: 3em;
+        inset: -100px -150px;
+    }
+
+    .container .circle::before {
+        background-size: 400px;
+        inset: -150px -200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .container .circle::after {
+        font-size: 2em;
+        inset: -80px -100px;
+    }
+
+    .container .circle::before {
+        background-size: 300px;
+        inset: -100px -150px;
+    }
+}

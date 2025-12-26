@@ -1,0 +1,486 @@
+@import "http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700";
+
+
+body {
+  
+
+  font-family: Mountains of Christmas;
+  width: 100%;
+  height: 100%;
+  background-color: #0f3325;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Santa_Container {
+
+  padding-left: 25px;
+  padding-right: 25px;
+    margin: 0;
+  padding: 0;
+  width:50vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.Sign-Background-Color {
+  fill: #f2c5b1;
+  background-color: #f2c5b1;
+}
+
+/***  Santa SVG Stylings  ***/
+
+.Santa-0 {
+  fill: #f2c5b1;
+}
+.Santa-1 {
+  opacity: 0.2;
+}
+.Santa-2 {
+  fill: #eb886b;
+}
+.Santa-3 {
+  fill: #f0f0f0;
+  stroke: #e4e4e4;
+  stroke-width: 2.2427;
+  stroke-miterlimit: 10;
+}
+.Santa-4 {
+  fill: #f0f0f0;
+}
+.Santa-5 {
+  fill: #5e5959;
+}
+.Santa-6 {
+  fill: #f7f3f2;
+}
+.Santa-7 {
+  fill: #d40b0b;
+}
+.Santa-8 {
+  fill: #e81516;
+}
+.Santa-9 {
+  fill: #ffffff;
+}
+.Santa-10 {
+  fill: #e4e4e4;
+}
+.Santa-11 {
+  fill: #657777;
+}
+.Santa-12 {
+  fill: #e8b39d;
+}
+.Santa-13 {
+  fill: #ebbfb0;
+}
+.Santa-14 {
+  opacity: 0.6;
+  fill: url(#Sign_Shadow_1_);
+  enable-background: new;
+}
+.Santa-15 {
+  fill: #eceef0;
+}
+.Santa-16 {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 20.3555;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+.Santa-17 {
+  fill: #c20807;
+}
+.Santa-18 {
+  opacity: 0.15;
+}
+.Santa-19 {
+  fill: #b30807;
+}
+.Santa-20 {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 21.1026;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+.Santa-Message {
+  fill: red;
+  stroke: green;
+  stroke-opacity: 0.5;
+  font-size: 80px;
+  text-align: center;
+}
+
+/***  Santa SVG Animations  ***/
+
+#Santa_Mouth {
+  animation: HoHoHoMouth 6s infinite 6s;
+  -webkit-animation: HoHoHoMouth 6s infinite 6s;
+  opacity: 0;
+}
+
+#ho1 {
+  animation: HoHoHoText1 6s infinite 6s;
+  -webkit-animation: HoHoHoText1 6s infinite 6s;
+  fill: #fff;
+  stroke: #000000;
+  font-weight: 700;
+  font-family: Mountains of Christmas;
+  opacity: 0;
+  font-size: 80px;
+}
+#ho2 {
+  animation: HoHoHoText2 6s infinite 6s;
+  -wbkit-animation: HoHoHotext2 6s infinite 6s;
+  font-weight: 700;
+  opacity: 0;
+  font-family: Mountains of Christmas;
+  fill: red;
+  stroke: #000000;
+  stroke-opacity: 0.5;
+  font-size: 100px;
+}
+#ho3 {
+  animation: HoHoHoText3 6s infinite 6s;
+  -webkit-animation: HoHoHoText3 6s infinite 6s;
+  font-weight: 700;
+  opacity: 0;
+  font-family: Mountains of Christmas;
+  fill: #00ff00;
+  stroke: #000000;
+  stroke-opacity: 0.5;
+  font-size: 90px;
+}
+@-webkit-keyframes HoHoHoText1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes HoHoHoText2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes HoHoHoText3 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes HoHoHoMouth {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes HoHoHoText1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes HoHoHoText2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+@keyframes HoHoHoText3 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes HoHoHoMouth {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+.UpDown_1 {
+  animation: bottom_animation 6s infinite;
+  -webkit-animation: bottom_animation 6s infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.eyesandbrow {
+  animation: bottom_animation 6s infinite;
+  -webkit-animation: bottom_animation 6s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes bottom_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* =========================================
+   ANIMATED PNG FLAKES
+   - Uses 3 layered PNGs
+========================================= */
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1000; /* Bring above content */
+  pointer-events: none; /* Don’t block clicks */
+
+  background: none;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake1.png"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake2.png"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake3.png");
+  background-repeat: repeat;
+  background-size: 600px 600px;
+
+  /* Single standard animation, no vendor prefixes needed now */
+  animation: snow 10s linear infinite;
+}
+
+/* =========================================
+   KEYFRAMES – shared by both layers
+   - Moves multiple background layers
+     at different speeds/directions
+========================================= */
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+/* ================= ARROW ================= */
+
+.month-preview {
+  position: relative;
+}
+
+.card-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.4rem;
+  color: #d4af37;
+  opacity: 0.6;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+/* hover hint */
+.month-card:hover .card-arrow {
+  opacity: 1;
+}
+
+/* rotate when open */
+.month-card.open .card-arrow {
+  transform: rotate(180deg);
+}
+/* ================= NUMBERS STATS ================= */
+
+.numbers-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.numbers-modal.active {
+  display: flex;
+}
+
+/* CONTENT */
+
+.numbers-content {
+  background: linear-gradient(145deg, #0b2a1a, #004f26);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  color: #f5f5f0;
+  text-align: center;
+
+  box-shadow: 0 0 50px rgba(212,175,55,0.45);
+  animation: numbersPop 0.5s ease;
+}
+
+@keyframes numbersPop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* TITLE */
+
+.numbers-title {
+  color: #d4af37;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+/* GRID */
+
+.numbers-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* ITEM */
+
+.numbers-item {
+  background: rgba(255,255,255,0.1);
+  border-radius: 18px;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* HIGHLIGHT */
+
+.numbers-highlight {
+  background: linear-gradient(135deg, #d4af37, #ffcc55);
+  color: #0b2a1a;
+}
+
+/* TEXT */
+
+.numbers-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.numbers-label {
+  font-size: 0.85rem;
+  margin: 4px 0;
+  opacity: 0.9;
+}
+
+.numbers-compare {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* FOOTER */
+
+.numbers-footer {
+  margin: 2rem 0 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* CLOSE */
+
+.numbers-close {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}

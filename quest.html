@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quest</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/quest.css">
+    <link rel="stylesheet" href="../css/background.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="snow">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+        </div>
+    </div>
+    <a href="home.html" class="home-btn">🏠 Home</a>
+
+    <!-- 🧠 QUIZ -->
+    <section class="quest">
+
+        <h1 class="quest-title">✨ New Year Quiz ✨</h1>
+        <p class="quest-subtitle">
+            Небольшой куиз для тебя.<br>
+        </p>
+
+        <!-- 🔒 ОДНА КАРТОЧКА ДЛЯ ВСЕГО -->
+        <div class="quest-card">
+
+            <!-- ТЕКСТ ВОПРОСА -->
+            <p class="quest-text"></p>
+
+            <!-- КНОПКИ / ВАРИАНТЫ / РУБАШКА (JS) -->
+            <div class="quest-actions"></div>
+
+        </div>
+
+        <div class="quest-trees"></div>
+    </section>
+    <!-- 🎉 SUCCESS OVERLAY -->
+    <div class="success-overlay hidden">
+        <div class="success-card">
+            <img class="success-img" src="" alt="">
+            <p class="success-text"></p>
+        </div>
+    </div>
+
+
+    <!-- 🎆 FIREWORKS -->
+    <canvas id="fireworks-canvas"></canvas>
+    <button id="firework-btn" class="quest-firework-btn">🎆</button>
+
+
+    <script src="../js/snow.js"></script>
+    <script src="../js/quest.js"></script>
+    <script src="/js/firework.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

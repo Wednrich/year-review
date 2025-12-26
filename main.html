@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ❄ СНЕГ -->
+  <div id="snow"></div>
+
+  <!-- ================= START SCREEN ================= -->
+  <section id="start-screen">
+
+    <h1>NEW YEAR</h1>
+
+    <button id="startBtn">
+      START
+    </button>
+
+  </section>
+
+  <!-- ================= MAIN SCREEN ================= -->
+  <section id="main-screen">
+
+    <!-- ===== HERO (фото + поздравление) ===== -->
+    <div class="hero">
+      <!-- ===== COUNTDOWN ===== -->
+      <div class="countdown-wrapper">
+        <div class="countdown-heading">
+          <h3>Countdown till</h3>
+          <h1 id="year">2026</h1>
+        </div>
+
+        <div class="countdown">
+          <div class="box">
+            <span class="num" id="day-box">00</span>
+            <span class="text">Days</span>
+          </div>
+          <div class="box">
+            <span class="num" id="hr-box">00</span>
+            <span class="text">Hours</span>
+          </div>
+          <div class="box">
+            <span class="num" id="min-box">00</span>
+            <span class="text">Minutes</span>
+          </div>
+          <div class="box">
+            <span class="num" id="sec-box">00</span>
+            <span class="text">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Фото Нового года -->
+      <div class="hero-image">
+        <!-- background-image будет через CSS -->
+      </div>
+
+      <!-- Текст поверх фото -->
+      <div class="hero-content">
+
+        <h2>
+          Happy New Year 🎄
+        </h2>
+
+        <p>
+          Жайна,<br>
+          пусть этот Новый год<br>
+          принесёт тепло,<br>
+          спокойствие и свет ✨
+        </p>
+
+      </div>
+    </div>
+
+    <!-- ===== МЕНЮ ===== -->
+    <div class="menu">
+
+      <a href="music.html" class="menu-btn">
+        🎶 Play Music
+      </a>
+
+      <a href="newyear.html" class="menu-btn">
+        🎄 About New Year
+      </a>
+
+      <a href="greeting.html" class="menu-btn">
+        💌 Greeting
+      </a>
+
+      <a href="quest.html" class="menu-btn">
+        🗝 Quest
+      </a>
+
+      <a href="gift.html" class="menu-btn locked">
+        🎁 Gift
+      </a>
+
+      <a href="future.html" class="menu-btn">
+        🔮 Future
+      </a>
+
+    </div>
+
+  </section>
+  <script src="js/snow.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/countdown.js"></script>
+
+</body>
+
+</html>

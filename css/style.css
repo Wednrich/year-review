@@ -1,0 +1,215 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #0b2a1a;
+  color: #f5f5f0;
+  overflow-x: hidden;
+}
+
+/* ================= START SCREEN ================= */
+#start-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #143d2a, #06160f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+#start-screen h1 {
+  font-size: 3rem;
+  letter-spacing: 0.4em;
+  margin-bottom: 2rem;
+  color: #d4af37;
+}
+
+#startBtn {
+  padding: 1rem 3.5rem;
+  background: transparent;
+  color: #f5f5f0;
+  border: 2px solid #d4af37;
+  border-radius: 50px;
+  letter-spacing: 0.25em;
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  background: #d4af37;
+  color: #0b2a1a;
+}
+
+/* ================= MAIN SCREEN ================= */
+#main-screen {
+  display: none;
+  min-height: 100vh;
+  background: #0b2a1a;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* background image */
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1608889175111-0b9a8f6b1c68");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+/* text content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero-content h2 {
+  font-size: 2.6rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ================= COUNTDOWN ================= */
+.countdown-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  text-align: center;
+}
+
+.countdown-heading h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  color: #d4af37;
+}
+
+.countdown-heading h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2em;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.countdown {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.box {
+  width: 85px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box .num {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  font-size: 1.7rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.box .text {
+  margin-top: -10px;
+  background: #7a1f1f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+}
+
+/* ================= MENU ================= */
+.menu {
+  padding: 3rem 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 1.2rem;
+}
+
+.menu-btn {
+  text-decoration: none;
+  padding: 1.2rem;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #f5f5f0;
+  border-radius: 18px;
+  letter-spacing: 0.1em;
+}
+
+.menu-btn:hover {
+  border-color: #d4af37;
+}
+
+.menu-btn.locked {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ================= SNOW ================= */
+#snow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  opacity: 0.8;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+  }
+}
